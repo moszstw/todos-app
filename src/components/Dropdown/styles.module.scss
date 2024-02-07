@@ -1,0 +1,32 @@
+.dropdownWrapper {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  z-index: 100;
+  gap: 10px;
+}
+
+.dropdownOptions {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 0.5px solid gray;
+}
+$purple: #585292;
+
+.option {
+  user-select: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  margin: 0px 4px;
+
+  &.isHover:hover {
+    color: white;
+    background-color: purple;
+  }
+}

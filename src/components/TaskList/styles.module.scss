@@ -1,0 +1,109 @@
+.taskList {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 9999px;
+}
+
+.checkedBoxWrapper {
+  flex: 0 0 10%;
+  text-align: center;
+}
+.labelWrapper {
+  flex: 0 0 75%;
+}
+.editButtonWrapper {
+  flex: 0 0 15%;
+  position: relative;
+}
+
+$purple: #585292;
+
+.checkboxContainer {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    & + .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 17px;
+      width: 17px;
+      background-color: #fff;
+      border: 2px solid $purple;
+      border-radius: 4px;
+    }
+
+    &:checked + .checkmark {
+      background-color: $purple;
+      border: 2px solid $purple;
+    }
+
+    &:checked + .checkmark:after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 1px;
+      width: 3px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.dotButton {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.dropdownOption {
+  min-width: 100%;
+  position: absolute;
+}
+
+.editList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.saveButton {
+  background-color: #585292;
+  color: white;
+  min-width: 64px;
+  min-height: 30px;
+  font-weight: bold;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.editTypeWrapper {
+  width: 100%;
+}
+
+.editType {
+  padding: 8px;
+  border: none;
+  width: 90%;
+}
+
+.editType:focus {
+  outline: none;
+}

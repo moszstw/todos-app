@@ -1,0 +1,96 @@
+.App {
+  background-color: #d1d0d9;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 42px 0px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.progress {
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.countProcess {
+  color: #ffffff;
+}
+
+.headRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.todoListWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customSelect {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.customSelect option {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.customSelect:hover,
+.customSelect:focus {
+  /* Add hover and focus styles for better user experience */
+  border-color: #007bff;
+}
+
+.dropdownSelect {
+  background-color: white;
+  min-width: 109px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownOption {
+  width: 100%;
+  position: absolute;
+  margin-top: 10px;
+}
